@@ -1,0 +1,192 @@
+/* Inline #2 | file:///Z:/Code%20stuff/JS%20project/index.html */
+
+
+/*replaced with hexes below
+body {
+    background-image: url("BG_Textools.webp");
+    background-repeat: no-repeat;
+    object-fit: fill;
+    /*width: ;
+    height: auto;*/
+
+
+}
+
+/*
+    fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+    contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+    cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+    none - The image is not resized
+    scale-down - the image is scaled down to the smallest version of none or contain
+*/
+
+/* Inline #2 | file:///Z:/Code%20stuff/JS%20project/index.html */
+#main_dibba {
+    background: rgba(162, 162, 162, 0.7);
+    border-radius: 50px;
+    filter: drop-shadow(0px 16px 25px #000);
+    backdrop-filter: blur(17.3px);
+    -webkit-backdrop-filter: blur(17.3px);
+    border: 1px solid rgba(162, 162, 162, 0.39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index
+}
+.dibba {
+    align-content: center;
+    height: 21em;
+    vertical-align: middle;
+    align-self: initial;
+    margin-top: 9%;
+    width: max-content;
+}
+h2 {
+    font-family: Arial;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.head_op_bar {
+    display: flex;
+    align-content: space-evenly;
+}
+
+/*button*/
+button {
+    position: relative;
+    padding: 7% 5%;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+}
+button span {
+    position: relative;
+    color: rgb(255, 248, 248);
+    font-size: 1em;
+    font-family: Arial;
+    z-index: 1;
+    font-weight: 600;
+}
+
+/*rem vs em
+Relativity	: em is relative to the font-size of its direct or nearest parent	rem is relative to the HTML (root) font-size
+Compounding Effect: em	May lead to a compounding effect	rem Does not lead to a compounding effect */
+button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #015c9d;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+button .liquid::after,
+button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: rgb(243, 38, 38);
+}
+button .liquid::before {
+    border-radius: 45%;
+    background: rgba(23, 226, 230, 0.782);
+    animation: animate 5s linear infinite;
+}
+button .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+button:hover .liquid {
+    top: -120px;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+/*background*/
+.hexagon {
+    position: relative;
+    width: 57.735026918925px;
+    height: 100px;
+    margin: 10px 18.433756729731px;
+    background-color: #5ec2c7;
+    transition: all 650ms ease-in-out;
+    z-index: -2;
+}
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    transition: all 650ms ease-in-out;
+    z-index: -2;
+}
+.hexagon:before {
+    left: 100%;
+    border-left: 28.867513459463px solid #5ec2c7;
+}
+.hexagon:after {
+    right: 100%;
+    border-right: 28.867513459463px solid #5ec2c7;
+}
+.hexagon.highlight,
+.hexagon:hover {
+    transition: all 150ms ease-in-out;
+}
+.hexagon.highlight:before,
+.hexagon.highlight:after,
+.hexagon:hover:before,
+.hexagon:hover:after {
+    transition: all 150ms ease-in-out;
+}
+.hexagon:hover {
+    cursor: pointer;
+    background-color: #f3f88b;
+}
+.hexagon:hover:before,
+.hexagon:hover:after {
+    border-left-color: #f3f88b;
+    border-right-color: #f3f88b;
+}
+.hexagon.highlight {
+    background-color: #040511;
+}
+.hexagon.highlight:before,
+.hexagon.highlight:after {
+    border-left-color: #040511;
+    border-right-color: #040511;
+}
+.col {
+    position: relative;
+    top: -10px;
+    left: -50px;
+    display: inline-block;
+    z-index: -2;
+}
+.col:nth-of-type(even) {
+    top: -65px;
+}
+#hex {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: -2;
+}

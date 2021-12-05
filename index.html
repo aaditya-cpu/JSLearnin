@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="hex" style="z-index: -2;"> </div>
+    <div class="main_dibba" id="main_dibba">
+        <div id="welcome" class="Name_call">
+            <p class="welcome"></p>
+        </div>
+        <div class="dibba">
+            <h2> Base Tools for text
+            </h2>
+
+            <div class="head_op_bar">
+
+                <div class="opt btn btn1">
+                    <button class="upp_case" id="upbtn">
+                        <span>Convert to UPPERCASE</span> 
+                        <div class="liquid"></div> 
+                    </button>
+                </div>
+                <div class="opt btn btn2">
+                    <button class="low_case" id="lowbtn">
+                        <span> convert to lowercase</span>
+                        <div class="liquid"></div> 
+                    </button>
+                </div>
+                <div class="opt btn btn3">
+                    <button id="charbtn" class="charbtn">
+                        <span> Count characters</span>
+                        <div class="liquid"></div> 
+                    </button>
+                </div>
+                <div class="opt btn btn4">
+                    <button id="countbtn" class="countbtn">
+                        <span> Count words</span>
+                        <div class="liquid"></div> 
+                    </button>
+                </div>
+
+            </div>
+            <div class="form_field">
+                <div>
+                    <form>
+                        <input type="text" name="upptxt" id="upptxt">
+                        <input type="submit" id="sub-up" value="CONVERT!!">
+                        <input type="reset" value="clear">
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <input type="text" name="lowtxt" id="lowtxt">
+                        <input type="submit" id="sub-low" value="convert!!">
+                        <input type="reset" value="clear">
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <input type="text" name="chartxt" id="chartxt">
+                        <input type="submit" id="sub-count" value="Count!!">
+                        <input type="reset" value="clear">
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <input type="text" name="counttxt" id="counttxt">
+                        <input type="submit" id="sub-char" value="Count!!">
+                        <input type="reset" value="clear">
+                    </form>
+                </div>
+            </div>
+            <div id="results">
+                <h3 id="resulttxt"></h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="bg.js" type="text/javascript"></script>
+<script src="bgmain.js" type="text/javascript"></script>
+
+</html>

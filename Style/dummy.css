@@ -1,0 +1,132 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    background-color: #004d73;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    animation: dibba_mover 2s ease 0s infinite normal both;
+}
+
+.Head {
+    border-radius: 49px;
+    background: linear-gradient(225deg, #003a73, #004489);
+    box-shadow: -19px 19px 38px #00264d, 19px -19px 38px #005ab3;
+    margin: 5%;
+    padding: 1%;
+    color: aliceblue;
+    animation: dibba_mover 2s ease 0s infinite normal both;
+}
+
+@keyframes dibba_mover {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.maind {
+    display: flex!important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 49px;
+    background: linear-gradient(225deg, #0073ad, #0089cd);
+    box-shadow: -19px 19px 38px #004d73, 19px -19px 38px #00b3ff;
+}
+
+.maind:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.maind:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.maind:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.maind:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.maind:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.formarea {
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    width: max-content;
+    height: max-content;
+    padding: 3%;
+    margin: 1%;
+    /* dummy.css | file:///Z:/Code%20stuff/JS%20project/Style/dummy.css */
+    line-height: 3rem;
+}
